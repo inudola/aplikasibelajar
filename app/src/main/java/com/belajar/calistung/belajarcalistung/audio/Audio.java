@@ -26,6 +26,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.belajar.calistung.belajarcalistung.LatihanHuruf;
+import com.belajar.calistung.belajarcalistung.MainActivity;
 import com.belajar.calistung.belajarcalistung.R;
 import com.belajar.calistung.belajarcalistung.result.Result;
 import com.belajar.calistung.belajarcalistung.test.Level;
@@ -167,7 +168,7 @@ public class Audio extends Activity {
                     public void onClick(DialogInterface dialog, int id) {
                         mediaPlayer.stop();
                         Audio.this.finish();
-                        Intent intent = new Intent(Audio.this, LatihanHuruf.class);
+                        Intent intent = new Intent(Audio.this, MainActivity.class);
                         startActivity(intent);
                     }
                 }).setNegativeButton("Batal",

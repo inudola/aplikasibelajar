@@ -8,7 +8,6 @@
     android:layout_gravity="center_vertical|center">
 
     <LinearLayout
-        android:id="@+id/LinearLayout04"
         android:layout_width="fill_parent"
         android:layout_alignParentTop="true"
         android:layout_above="@+id/LinearLayout01"

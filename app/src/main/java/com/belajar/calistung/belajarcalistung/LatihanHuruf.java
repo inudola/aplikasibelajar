@@ -27,6 +27,10 @@ public class LatihanHuruf extends Activity {
         finish();
 
     }
+    public void bukamengenalangka(View view){
+        Intent intent = new Intent(LatihanHuruf.this, BelajarHitung.class);
+        startActivity(intent);
+    }
 
     public void bukabelajar(View view) {
         Intent intent = new Intent(LatihanHuruf.this, BelajarBaca.class);

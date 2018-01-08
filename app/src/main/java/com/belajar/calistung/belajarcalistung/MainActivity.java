@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.belajar.calistung.belajarcalistung.audio.Audio;
+
 public class MainActivity extends Activity {
 
     @Override
@@ -51,6 +53,11 @@ public void bukabaca(View view){
     Intent intent = new Intent(MainActivity.this, LatihanHuruf.class);
     startActivity(intent);
 }
+    public void bukalatihan(View view) {
+        Intent intent = new Intent(MainActivity.this, Audio.class);
+        startActivity(intent);
+        finish();
+    }
     public void bukaabout(View view){
         Intent intent = new Intent(MainActivity.this, AboutActivity.class);
         startActivity(intent);
@@ -59,14 +66,7 @@ public void bukabaca(View view){
         Intent intent = new Intent(MainActivity.this, HelpActivity.class);
         startActivity(intent);
     }
-    public void bukahewan(View view){
-        Intent intent = new Intent(MainActivity.this, ActivityHewan.class);
-        startActivity(intent);
-    }
-    public void bukatransportasi(View view){
-        Intent intent = new Intent (MainActivity.this, ActivityTransportasi.class);
-        startActivity(intent);
-    }
+
         protected void exitByBackKey() {
 
             AlertDialog alertbox = new AlertDialog.Builder(this)
