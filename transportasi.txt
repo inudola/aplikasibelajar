@@ -13,3 +13,11 @@ Truck-
 Angkot-
 Taksi
 
+
+
+git init #initiate the directory
+git add .
+git push
+git commit -m "comment"
+switch branch 
+git checkout -b "branch name"
